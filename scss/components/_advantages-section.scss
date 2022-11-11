@@ -1,0 +1,39 @@
+/* Advantages section */
+.advantages-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-container::before {
+    position: absolute;
+    top: -23px;
+    left: -136px;
+    z-index: -1;
+    width: 600px;
+    height: 160px;
+    background-image: var(--gradient-decor);
+    content: '';
+}
+
+.advantages-content {
+    flex-shrink: 0;
+}
+
+.advantages-text {
+    max-width: 460px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: flex-end;
+}
+
+.advantages-item {
+    width: 288px;
+    /* flex-basis: calc((100% - 32px) / 2); */
+}

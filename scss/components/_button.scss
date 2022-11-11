@@ -1,0 +1,30 @@
+/* Button */
+.primary-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    fill: var(--color-inverted);
+    color: var(--color-inverted);
+    font-family: inherit;
+    background-color: var(--color-brand);
+    border: 0;
+    border-radius: 2px;
+    transition: color 250ms, background-color 250ms, fill 250ms, box-shadow 250ms;
+    cursor: pointer;
+}
+
+.primary-button-small {
+    padding: 12px 16px;
+}
+
+.primary-button:hover {
+    fill: var(--color-brand);
+    color: var(--color-brand);
+    background-color: var(--color-inverted);
+    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+}
+
+.primary-button:focus {
+    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+}

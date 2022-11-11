@@ -1,0 +1,256 @@
+.advantage-card {
+  display: block;
+  padding: 32px 40px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.advantage-card:hover {
+  background-color: var(--color-white);
+  box-shadow: 0px 6px 32px rgba(155, 148, 148, 0.17);
+}
+
+.advantage-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  fill: var(--color-brand);
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
+.advantage-card:hover .advantage-card-img {
+  fill: var(--color-white);
+  background-color: var(--color-brand);
+}
+
+.advantage-card-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.advantage-card-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 50px;
+  background-color: var(--color-white);
+  border-radius: 8px;
+}
+
+.feature-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 64px 50px;
+  color: var(--color-white);
+  transform: translateY(100%);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: transform 250ms;
+}
+
+.feature-card:hover .feature-description {
+  transform: translateY(0);
+}
+
+/* Socials */
+.socials-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  fill: var(--color-brand);
+  background-color: var(--social-icon-background);
+  border-radius: 50%;
+}
+
+.socials-link:hover {
+  fill: var(--social-icon-background);
+  background-color: var(--color-brand);
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  overflow: auto;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  max-height: 581px;
+  height: 100%;
+  padding: 40px;
+  background-color: var(--color-white);
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* Form */
+.form-input {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* Input */
+.input-wrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 12px 12px 32px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-brand);
+}
+
+.input:disabled {
+  border-color: lightgray;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+}
+
+.input:disabled + .input-icon {
+  fill: lightgray;
+}
+
+.input:focus + .input-icon {
+  fill: var(--color-brand);
+}
+
+/* Textarea */
+.form-textarea {
+  margin-bottom: 24px;
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: var(--color-brand);
+}
+
+/* Checkbox */
+.form-checkbox {
+  margin-bottom: 24px;
+}
+
+.checkbox {
+  appearance: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 28px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  content: '';
+}
+
+.checkbox-label::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 0;
+  content: '';
+}
+
+.checkbox:checked + .checkbox-label::after {
+  opacity: 1;
+}
+
+.form-button {
+  margin: 0 auto;
+}

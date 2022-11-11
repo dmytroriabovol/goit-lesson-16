@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Awesome UI</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="./index.html">
+              <img src="./images/logo.svg" alt="Awesome UI logo" />
+            </a>
+            <button class="header__burger-menu js-open-menu">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-burger-menu"></use>
+              </svg>
+            </button>
+            <ul class="header__menu">
+              <li>
+                <a class="header__link" href="#">Benefits</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Features</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">About</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">Team</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header__register-button primary-button primary-button-small" type="button">
+            Register
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- <img
+        srcset="https://picsum.photos/id/237/300/300 300w, https://picsum.photos/id/237/600/600 600w, https://picsum.photos/id/237/1200/1200 1200w"
+        sizes="(min-width: 900px) 600px, (min-width: 600px) 300px, 100vw"
+        src="https://picsum.photos/id/237/300/300"
+        alt="Опис зображення для всіх версій"
+      /> -->
+      <!-- <img
+        srcset="./images/hero-background-img.jpg 1x, ./images/hero-image.png 2x"
+        src="./images/hero-background-img.jpg"
+        alt="Test image"
+      > -->
+
+      <!-- <section class="hero section">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Awesome User Interface is what we can apply
+              </h1>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue
+                et eros, pellentesque et. Tristique ullamcorper ac pharetra in
+                nisi sit vivamus lorem.
+              </p>
+              <button class="primary-button" type="button" data-modal-open>
+                Get started
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+            <img class="hero__image" src="./images/hero-image.png" alt="Woman is playing tennis" />
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="section advantages">
+        <div class="container">
+          <div class="advantages-container">
+            <div class="advantages-content">
+              <h2 class="section-title">Advantages</h2>
+              <p class="section-subtitle">Our benefits</p>
+              <p class="advantages-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo
+                aliquam donec enim, commodo fermum vitae. Et velit sceleris,
+                commodo fermentum vitae. Et velit sceleris
+              </p>
+              <button class="primary-button" type="button" data-modal-open>
+                Get started
+              </button>
+            </div>
+            <ul class="advantages-list">
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-smart-car"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Car Rental</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-ship"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Boat Cruise</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-bus"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Bus Trip</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+              <li class="advantages-item">
+                <a class="advantage-card" href="#">
+                  <div class="advantage-card-img">
+                    <svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-driving"></use>
+                    </svg>
+                  </div>
+                  <h3 class="advantage-card-title">Road Trip</h3>
+                  <p class="advantage-card-text">
+                    Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="section">
+        <div class="container">
+          <div class="features-container">
+            <h2 class="section-title">Features</h2>
+            <p class="section-subtitle">What we can apply</p>
+            <ul class="features-list">
+              <li class="features-item">
+                <div class="feature-card">
+                  <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-python"></use>
+                  </svg>
+                  <h3>MOT consectet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                  <div class="feature-description">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Deserunt adipisci sit provident quis voluptatem. Error,
+                      cum.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="feature-card">
+                  <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-iost"></use>
+                  </svg>
+                  <h3>MOT consectet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </div>
+              </li>
+              <li class="features-item">
+                <div class="feature-card">
+                  <svg width="64" height="64">
+                    <use href="./images/icons.svg#icon-stack"></use>
+                  </svg>
+                  <h3>MOT consectet</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                    quis vitae
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="section about">
+        <div class="container">
+          <div class="about-container">
+            <div class="about-image">
+              <picture>
+                <source srcset="./images/about-us-image.webp 1x, ./images/about-us-image@2x.webp 2x"
+                  src="./images/about-us-image.webp">
+                <img
+                  media="()"
+                  srcset="./images/about-us-image.jpg 1x, ./images/about-us-image@2x.jpg 2x"
+                  src="./images/about-us-image.jpg"
+                  alt="About us image"
+                >
+              </picture>
+            </div>
+            <div class="about-content">
+              <h2 class="section-title">About us</h2>
+              <p class="section-subtitle">Who we are</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae nullam aliquet dignissim quis. Vel, faucibus ac justo
+                aliquam donec enim, commodo fermentum vitae. Et velit sceleris,
+                commodo entum vitaefermentum vitae. Et velit sceleris nullam
+                aliquet dignissim
+              </p>
+              <button class="primary-button" type="button" data-modal-open>
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="container">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Awesome UI logo" />
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p>Copyright &copy; 2022 AWESOME</p>
+        <p>All rights reserved</p>
+        <address>
+          <ul class="socials-list">
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-dribbble"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="socials-link" href="#">
+                <svg width="16" height="16">
+                  <use href="./images/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button class="mobile-menu__close-button js-close-menu">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+          <ul>
+            <li>
+              <a class="mobile-menu__link" href="#">Benefits</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#">Features</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#">About</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#">Team</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" type="button" data-modal-close>
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal-title">Залиште свої дані</h2>
+        <form name="contact-form" autocomplete="off">
+          <div class="form-input">
+            <label class="form-label" for="person-name">Ім'я</label>
+            <div class="input-wrapper">
+              <input
+                class="input"
+                id="person-name"
+                type="text"
+                name="person-name"
+                minlength="6"
+                maxlength="20"
+                pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                title="Введіть значення у форматі 'Ім'я Прізвище'"
+                placeholder=" "
+              />
+              <svg class="input-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-input">
+            <label class="form-label" for="person-phone">Телефон</label>
+            <div class="input-wrapper">
+              <input
+                class="input"
+                id="person-phone"
+                type="tel"
+                name="person-phone"
+                pattern="^\+[0-9]{12}"
+              />
+              <svg class="input-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-input">
+            <label class="form-label" for="person-mail">Пошта</label>
+            <div class="input-wrapper">
+              <input
+                class="input"
+                id="person-mail"
+                type="email"
+                name="person-mail"
+              />
+              <svg class="input-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-textarea">
+            <label class="form-label" for="person-comment">Коментар</label>
+            <textarea
+              class="textarea"
+              id="person-comment"
+              name="person-comment"
+              placeholder="Введіть коментар..."
+            ></textarea>
+          </div>
+          <div class="form-checkbox">
+            <input
+              class="checkbox visually-hidden"
+              id="terms-checkbox"
+              type="checkbox"
+              name="terms-checkbox"
+            />
+            <label class="checkbox-label" for="terms-checkbox">
+              Погоджуюся з розсилкою та приймаю
+              <a href="#">Умови договору</a>
+            </label>
+          </div>
+          <button class="form-button primary-button" type="submit">
+            Get started
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
